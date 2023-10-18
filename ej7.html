@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Formularios </title>
+</head>
+<body>
+	<form action="https://www.w3schools.com/action_page.php method=" post">
+	<fieldset>
+		<legend>Receta</legend>
+
+		<label for="nombre">Nombre de la receta: </label>
+        <input name="nombre" id="nombre" type="text"> 
+        <br><br>
+
+        <label for="correo">Correo del autor: </label>
+        <input id="correo" name="correo" type="email"> 
+        <br><br>
+
+        <label>Momento para comer </label>
+        <input name="momento" type="checkbox" value="Desayuno"> Desayuno
+        <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
+        <input name="momento" type="checkbox" value="Merienda"> Merienda
+        <input name="momento" type="checkbox" value="Cena"> Cena
+        <input name="momento" type="checkbox" value="Postre"> Postre 
+        <br><br>
+
+		<select name="ingredientes" id="ingredientes">
+
+            <optgroup label="Carne">
+                <option>Merluza</option>
+                <option>Pulpo</option>
+                <option>Pollo</option>
+                <option>Pavo</option>
+            </optgroup>
+
+            <optgroup label="Pescado">
+                <option>Grado Superior</option>
+                <option>Grado Medio</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+        
+       
+
+	</fieldset>
+	</form>
+</body>
+</html>
