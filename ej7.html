@@ -6,46 +6,74 @@
 	<title> Formularios </title>
 </head>
 <body>
-	<form action="https://www.w3schools.com/action_page.php method=" post">
+	<form action="https://www.w3schools.com/action_page.php" method="post">
 	<fieldset>
 		<legend>Receta</legend>
 
 		<label for="nombre">Nombre de la receta: </label>
-        <input name="nombre" id="nombre" type="text"> 
-        <br><br>
+            <input name="nombre" id="nombre" type="text"> 
+            <br><br>
 
         <label for="correo">Correo del autor: </label>
-        <input id="correo" name="correo" type="email"> 
-        <br><br>
+            <input id="correo" name="correo" type="email"> 
+            <br><br>
 
         <label>Momento para comer </label>
-        <input name="momento" type="checkbox" value="Desayuno"> Desayuno
-        <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
-        <input name="momento" type="checkbox" value="Merienda"> Merienda
-        <input name="momento" type="checkbox" value="Cena"> Cena
-        <input name="momento" type="checkbox" value="Postre"> Postre 
-        <br><br>
+            <input name="momento" type="checkbox" value="Desayuno"> Desayuno
+            <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
+            <input name="momento" type="checkbox" value="Merienda">Merienda
+            <input name="momento" type="checkbox" value="Cena"> Cena
+            <input name="momento" type="checkbox" value="Postre"> Postre 
+            <br><br>
 
-		<select name="ingredientes" id="ingredientes">
+        <label for="ingredientes">Ingredientes: </label>
+		<select name="ingredientes" id="ingredientes" multiple="multiple">
 
             <optgroup label="Carne">
-                <option>Merluza</option>
+                <option>Ternera</option>
                 <option>Pulpo</option>
                 <option>Pollo</option>
                 <option>Pavo</option>
             </optgroup>
 
             <optgroup label="Pescado">
-                <option>Grado Superior</option>
-                <option>Grado Medio</option>
+                <option>Merluza</option>
+                <option>Bacalao</option>
+                <option>Atún</option>
+                <option>Dorada</option>
             </optgroup>
 
+            <optgroup label="Verdura">
+                <option>Cebolla</option>
+                <option>Lechuga</option>
+                <option>Patata</option>
+                <option>Pepino</option>
+            </optgroup>
+
+           <optgroup label="Fruta">
+                <option>Manzana</option>
+                <option>Moras</option>
+                <option>Plátano</option>
+                <option>Uva</option>
+            </optgroup>
+   
         </select>
         <br><br>
         
-       
+        <label>Horas</label>
+        <input name="horas" type="checkbox" value="1horas"> 1 hora
+        <input name="horas" type="checkbox" value="2horas"> 2 horas
+        <br>
+
+
+        <label>Minutos</label>
+        <input name="minutos" type="checkbox" value="minutos"> 15 minutos
+        <input name="minutos" type="checkbox" value="minutos"> 30 minutos
+        <input name="minutos" type="checkbox" value="minutos"> 45 minutos
+        
 
 	</fieldset>
+    <input type="submit" name="enviar" value="Enviar">
 	</form>
 </body>
 </html>
