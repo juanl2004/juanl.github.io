@@ -6,28 +6,28 @@
 	<title> Formularios </title>
 </head>
 <body>
-	<form action="https://www.w3schools.com/action_page.php" method="post">
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
 	<fieldset>
 		<legend>Receta</legend>
 
-		<label for="nombre">Nombre de la receta: </label>
+		<label  type="text" for="nombre" placeholder="Ingrese su nombre">Nombre de la receta: </label>
             <input name="nombre" id="nombre" type="text"> 
             <br><br>
 
-        <label for="correo">Correo del autor: </label>
+        <label type="text" for="correo" placeholder="Ingrese su correo electrónico" required>Correo del autor: </label>
             <input id="correo" name="correo" type="email"> 
             <br><br>
 
         <label>Momento para comer </label>
-            <input name="momento" type="checkbox" value="Desayuno"> Desayuno
-            <input name="momento" type="checkbox" value="Almuerzo"> Almuerzo
-            <input name="momento" type="checkbox" value="Merienda">Merienda
-            <input name="momento" type="checkbox" value="Cena"> Cena
-            <input name="momento" type="checkbox" value="Postre"> Postre 
+            <input name="momento[]" type="checkbox" id="momento" value="Desayuno"> Desayuno
+            <input name="momento[]" type="checkbox" id="momento" value="Almuerzo"> Almuerzo
+            <input name="momento[]" type="checkbox" id="momento" value="Merienda">Merienda
+            <input name="momento[]" type="checkbox" id="momento" value="Cena"> Cena
+            <input name="momento[]" type="checkbox" id="momento" value="Postre"> Postre 
             <br><br>
 
         <label for="ingredientes">Ingredientes: </label>
-		<select name="ingredientes" id="ingredientes" multiple="multiple">
+		<select name="ingredientes[]" id="ingredientes" multiple="multiple">
 
             <optgroup label="Carne">
                 <option>Ternera</option>
@@ -60,17 +60,20 @@
         </select>
         <br><br>
         
-        <label>Horas</label>
-        <input name="horas" type="checkbox" value="1horas"> 1 hora
-        <input name="horas" type="checkbox" value="2horas"> 2 horas
+        <label><b>Horas</b></label><br>
+        <input name="horas" type="checkbox" id="horas" value="1horas"> 1 hora
+        <input name="horas" type="checkbox" id="horas" value="2horas"> 2 horas
         <br>
 
 
-        <label>Minutos</label>
-        <input name="minutos" type="checkbox" value="minutos"> 15 minutos
-        <input name="minutos" type="checkbox" value="minutos"> 30 minutos
-        <input name="minutos" type="checkbox" value="minutos"> 45 minutos
+        <label><b>Minutos</b></label><br>
+        <input name="minutos" type="radio" id="minutos" value="15minutos"> 15 minutos
+        <input name="minutos" type="radio" id="minutos" value="30minutos"> 30 minutos
+        <input name="minutos" type="radio" id="minutos" value="45minutos"> 45 minutos
+        <br><br>
         
+        <label>Subir imagen</label>
+        <input type="file" name="imagen1" />
 
 	</fieldset>
     <input type="submit" name="enviar" value="Enviar">
