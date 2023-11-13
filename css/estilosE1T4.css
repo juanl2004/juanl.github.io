@@ -1,0 +1,48 @@
+#derecha {
+	text-align: right;
+	font-style: italic;
+}
+
+#tachado {
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+
+#grande {
+	font-size: 120%;
+	font-family: serif;
+}
+
+#verde {
+	font-weight: bold;
+	text-shadow: -4px 3px 5px green;
+}
+
+#div1 {
+	background-color: #DAF7A6;
+	height: 200px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	inset-block: ;
+	padding: ;
+}
+
+#div2 {
+	background-color: #A3E4D7;
+	height: 200px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	float: left;
+}
+
+#div3 {
+	background-color: #C39BD3;
+	height: 200px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	float: left;
+}
+
