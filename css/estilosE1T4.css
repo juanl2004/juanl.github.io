@@ -43,31 +43,38 @@ div {
 
 .rojo {
 	background-color: darkred;
+	height: 50px;
+	width: 100px;
 }
 
 .green {
 	background-color: green;
+	height: 50px;
+	width: 100px;
 }
 
 .azul {
 	background-color: blue;
+	height: 50px;
+	width: 100px;
 }
 
 div a {
 	color: white;
-	height: 50px;
-	width: 100px;
 	float: left;
 	text-decoration: underline;
 	display: block;
+}
+
+.noticias {
+	padding: 5px;
 	text-decoration: none;
 }
 
-a:hover {
+.noticias:hover {
 	color: white;
 	text-decoration: underline;
-	 background-color: black;
-	
+	background-color: black;
 }
 
 div p {
