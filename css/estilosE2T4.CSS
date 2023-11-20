@@ -1,0 +1,26 @@
+div {
+	height: 200px;
+	width: 200px;
+	background-image: url(../img/pikachu.jpg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	
+}
+
+#div1 {
+	border: 2px solid black;
+	background-position: center;
+}
+
+#div2 {
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	border: 2px solid red;
+}
+
+#div3 {
+	background-position: bottom right;
+	background-repeat: repeat-y;
+	border: 2px solid blue;
+	
+}
