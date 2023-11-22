@@ -11,10 +11,25 @@
 
 }
 
+
+
 .t3 {
 	border: 1px solid black;
+	align: center;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .t3tr {
+	margin: 1px;
+}
+
+.t3td {
 	border: 1px solid black;
+	padding: 10px;
+	display: inline-flex;
+	margin: 1px;
+	
+
 }

@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  
+
+  
+}
+
+
+.columna {
+	width: 33%;
+	background-color: #AED6F1;
+	border: 1px solid black;
+	display: flex;
+
+}
