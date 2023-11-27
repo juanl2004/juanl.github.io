@@ -1,15 +1,11 @@
-.flex-container {
-  display: flex;
-  
-
-  
-}
-
 
 .columna {
-	width: 33%;
+	width: 30%;
 	background-color: #AED6F1;
 	border: 1px solid black;
-	display: flex;
+	margin: 5px;
+	justify-content: space-evenly;
+	display: inline-flex;
+ 	margin-bottom: 10px;
 
 }
