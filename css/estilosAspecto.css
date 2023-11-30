@@ -1,38 +1,97 @@
-
-.nav {
-  color: blue;
-  background: lightblue;
-  text-decoration: none;
-  background: lightblue;
-  font-weight: bold;
-
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    background-color: #E0F2F1;
 }
 
-.nav:hover {
-  transition: all 0.5s;
-  color: blue;
-  background: white;
-  padding: 10px;
+p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-li,a {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  border-radius: 5px;
-} 
+.contenedor {
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    background-color: cadetblue;
+    color: cadetblue;
+    padding: 10px;
+    position: fixed;
+    width: 90%;
+    z-index: 1000; 
+    border-radius: 10px;
+    text-align: center;
+    top: 0;
+}
+
+li a {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: lightblue; 
+    border-radius: 5px;
+}
+
 
 section {
-  display: inline-table;
+     margin-top: 20px;
 }
-h2 {
-  text-align: center;
+
+
+.num1 {
+    margin-top: 10%;
 }
-ul{
-  display: flex;
-  flex-direction: row; 
+
+
+section p {
+    margin-bottom: 10px; 
 }
-nav{
-  border: solid 5px black;
+
+
+img {
+    max-width: 60%; 
+    height: auto; 
+    margin-top: 10px; 
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    section {
+        column-count: 2; 
+        column-gap: 20px; 
+        break-inside: avoid; 
+    }
+
+    section img {
+        text-align: center; 
+
+    }
 }
