@@ -1,5 +1,9 @@
-ul {
-	position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+.rounded {
+	width: 200px;
+	height: 200px;
+}
+
+.rounded1 {
+	width: 400px;
+	height: 200px;
 }
